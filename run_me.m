@@ -1,5 +1,5 @@
 % choose image by number
-% All images are in the folder "test_images"
+% All images are in the folder "test_images".
 for globalit = 10
 
 % solve WNNM model of the Cauchy noise denoising by ADMM algorithm.
