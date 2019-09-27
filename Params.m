@@ -9,3 +9,4 @@ Par.patnum    = 70;                % Initial Non-local Patch number
 Par.iter      = 2;
 Par.eta       = 0.6;               % Noise estimete parameter
 Par.step      = 4;
+Par.threshold = 1e-3;              % terminate condition of ADMM algorithm
