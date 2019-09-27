@@ -30,7 +30,6 @@ maxiter = 100;
 lambda = 1;
 beta = 2*lambda/gamma^2 + eps;
 energy = zeros(1,maxiter+1);
-threshold = 1e-3;                               % terminate parameter
 W = zeros(size(img));
 E = zeros(size(img));
 medY = medfilt2(Y);
@@ -50,7 +49,7 @@ for i = 1:maxiter
         De = abs(energy(i-1)-energy(i))/energy(i);
         p2 = psnr(uint8(X), uint8(img)); s2 = ssim(uint8(X), uint8(img));
         fprintf("iteration : %d, PSNR : %.2f, SSIM : %.4f\n", i, p2, s2);
-        if De < threshold
+        if De < Par.threshold
             p1 = psnr(uint8(Y), uint8(img)); s1 = ssim(uint8(Y), uint8(img));
             figure;
             subplot(1,2,1); imshow(uint8(Y)); title({'Noisey image';['PSNR = ',num2str(p1)];['SSIM = ', num2str(s1)]});
