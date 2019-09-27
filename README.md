@@ -11,6 +11,6 @@ To run this code, you need parallel computing toolbox which is matlab tool box f
 
 Testing
 --------------
-Add path Functions, PatchTools, test_images folders
-Run run_me.m file
+Add path Functions, PatchTools, test_images folders.
+Run run_me.m file.
 We tested this code on Ubuntu 18.04, MATLAB 2019a.
