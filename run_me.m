@@ -35,6 +35,8 @@ E = zeros(size(img));
 medY = medfilt2(Y);
 X = max(min(medY(:)),min(Y,max(medY(:))));      % set initial image
 
+% sigma = 2.7 for gamma = 5
+% sigma = 4.0 for gamma = 10
 sigma = 2.7;
 Par = Params(sigma);
 
