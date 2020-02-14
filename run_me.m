@@ -7,13 +7,13 @@ img_num = 3;
 if img_num == 1; clear; imname = "barbara"; img = double(imread('barbara.png')); img = imresize(img, 0.5);
 elseif img_num == 2; clear; imname = "boat"; img = double(imread('boat.png')); img = imresize(img, 0.5);
 elseif img_num == 3; clear; imname = "cameraman"; img = double(imread('cameraman.tif'));
-elseif img_num == 4; clear; imname = "house"; img = double(rgb2gray(imread('house.tiff'))); img = imresize(img, 0.5);
-elseif img_num == 5; clear; imname = "man"; img = double(imread('man.tiff')); img = imresize(img, 0.25);
-elseif img_num == 6; clear; imname = "mandrill"; img = double(imread('mandrill.png')); img = imresize(img, 0.5);
-elseif img_num == 7; clear; imname = "peppers"; img = double(imread('peppers256.png'));
-elseif img_num == 8; clear; imname = "plane"; img = double(imread('jetplane.png')); img = imresize(img, 0.5);
-elseif img_num == 9; clear; imname = "synthetic"; img = double(rgb2gray(imread('synthetic1.bmp'))); img = imresize(img, 1.01);
-elseif img_num == 10; clear; imname = "walkbridge"; img = double(imread('walkbridge.png')); img = imresize(img, 0.5);
+elseif img_num == 4; clear; img_name = "couple"; img = double(imread('couple.png')); img = imresize(img, 0.5);
+elseif img_num == 5; clear; imname = "house"; img = double(rgb2gray(imread('house.tiff'))); img = imresize(img, 0.5);
+elseif img_num == 6; clear; imname = "man"; img = double(imread('man.tiff')); img = imresize(img, 0.25);
+elseif img_num == 7; clear; imname = "mandrill"; img = double(imread('mandrill.png')); img = imresize(img, 0.5);
+elseif img_num == 8; clear; imname = "peppers"; img = double(imread('peppers256.png'));
+elseif img_num == 9; clear; imname = "plane"; img = double(imread('jetplane.png')); img = imresize(img, 0.5);
+elseif img_num == 10; clear; imname = "synthetic"; img = double(rgb2gray(imread('synthetic1.bmp'))); img = imresize(img, 1.01);
 end
 
 % Generate Cauchy noisy image.
