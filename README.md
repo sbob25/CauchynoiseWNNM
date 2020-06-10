@@ -4,7 +4,7 @@ This code is MATLAB file for Cauchy noise denoising model by using weighted nucl
 
 Requirements
 --------------
-To run this code, you need parallel computing toolbox which is matlab tool box for parallel computing.
+To run this code, you need parallel computing toolbox which is a matlab tool box for parallel computing.
 
 
 
